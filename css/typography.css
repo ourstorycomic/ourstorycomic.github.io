@@ -233,10 +233,10 @@ loading
 ------------------------------------------------*/
 
 #loading {
-	background: var(--iq-body-bg) url(../images/loader.gif) no-repeat scroll center center;
+	background: var(--iq-body-bg) url(../images/walk.gif) no-repeat scroll center center;
 	height: 100%;
 	width: 100%;
-	background-size: 15%;
+	background-size: 100%;
 	position: fixed;
 	margin-top: 0em;
 	top: 0em;
