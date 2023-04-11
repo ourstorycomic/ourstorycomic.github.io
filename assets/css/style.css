@@ -5135,10 +5135,10 @@ loading-center{
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
-p {
+loading-center p {
   text-align: center;
 }
-div {
+loading-center div {
   text-align: center;
   color: white;
 }
