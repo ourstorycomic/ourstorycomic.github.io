@@ -5121,20 +5121,30 @@ label {
 	top: 0px;
 	z-index: 99;
 }
-#loading-center{
+loading-center{
+     text-align: left;
 	width: 100%;
 	height: 100%;
-	position: relative;
+	position: fixed;
 }
 #loading-center-absolute {
     position: absolute;
     left: 50%;
     top: 50%;
+    text-align: center;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
+p {
+  text-align: center;
+}
+div {
+  text-align: center;
+  color: white;
+}
 #loading-center-absolute img {
-	max-width: 85px;
+    width:200px;
+    height: auto;
 }
 /*==============================
 	Plyr customization
