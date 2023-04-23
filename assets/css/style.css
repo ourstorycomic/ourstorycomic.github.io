@@ -38,6 +38,42 @@ body {
 	font-size: 14px;
 	color: #fff;
 	font-style: normal;
+     margin: 0;
+     padding: 0;
+}
+
+.electron-borderless .titlebar {
+  background-color: #333;
+  color: #fff;
+}
+
+.electron-borderless .titlebar .title {
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.electron-borderless .titlebar .icon {
+  width: 16px;
+  height: 16px;
+  margin-right: 8px;
+}
+
+.electron-borderless .titlebar .buttons {
+  margin-right: 8px;
+}
+
+.electron-borderless .titlebar .button {
+  width: 16px;
+  height: 16px;
+  margin-left: 8px;
+}
+
+.electron-borderless .titlebar .button:hover {
+  background-color: #555;
+}
+
+.electron-borderless .titlebar .button:active {
+  background-color: #777;
 }
 img,
 .img {
@@ -5262,5 +5298,11 @@ loading-center div {
      background: #121212;
 }
 ::-webkit-scrollbar {
-    display: none;
+  width: 0px;
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #fff;
+  border-radius: 10px;
 }
