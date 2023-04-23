@@ -38,42 +38,6 @@ body {
 	font-size: 14px;
 	color: #fff;
 	font-style: normal;
-     margin: 0;
-     padding: 0;
-}
-
-.electron-borderless .titlebar {
-  background-color: #333;
-  color: #fff;
-}
-
-.electron-borderless .titlebar .title {
-  font-size: 16px;
-  font-weight: bold;
-}
-
-.electron-borderless .titlebar .icon {
-  width: 16px;
-  height: 16px;
-  margin-right: 8px;
-}
-
-.electron-borderless .titlebar .buttons {
-  margin-right: 8px;
-}
-
-.electron-borderless .titlebar .button {
-  width: 16px;
-  height: 16px;
-  margin-left: 8px;
-}
-
-.electron-borderless .titlebar .button:hover {
-  background-color: #555;
-}
-
-.electron-borderless .titlebar .button:active {
-  background-color: #777;
 }
 img,
 .img {
@@ -5305,4 +5269,32 @@ loading-center div {
 ::-webkit-scrollbar-thumb {
   background: #fff;
   border-radius: 10px;
+}
+/* Titlebar */
+.titlebar {
+  -webkit-app-region: drag;
+  background-color: #333;
+  color: #fff;
+  height: 30px;
+  padding: 5px;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Frameless window */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.window {
+  -webkit-app-region: drag;
+  background-color: #121212;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  height: 400px;
+  width: 600px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
