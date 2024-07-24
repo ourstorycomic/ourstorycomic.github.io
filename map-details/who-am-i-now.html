@@ -1,0 +1,633 @@
+<!doctype html>
+<html class="no-js" lang="">
+    
+<head>
+        <meta data-n-head="ssr" charset="utf-8">
+        <meta data-n-head="ssr" name="viewport" content="width=device-width, initial-scale=1">
+        <meta data-n-head="ssr" name="description" data-hid="description" content="Come hang out with our TV Shows & Comics!">
+        <meta data-n-head="ssr" name="og:site_name" data-hid="og:site_name" content="RW Studio">
+        <meta data-n-head="ssr" name="og:title" data-hid="og:title" content="RW Studio | Coming Soon">
+        <meta data-n-head="ssr" name="og:description" data-hid="og:description" content="Come hang out with our TV Shows & Comics!">
+        <meta data-n-head="ssr" name="og:type" data-hid="og:type" content="website">
+        <meta data-n-head="ssr" name="og:url" data-hid="og:url" content="index.html">
+        <meta data-n-head="ssr" name="og:image" data-hid="og:image" content="https://rwstudio.nim.town/assets/img/logo/app-logo.png">
+        <meta data-n-head="ssr" data-hid="mobile-web-app-capable" name="mobile-web-app-capable" content="yes">
+        <meta data-n-head="ssr" data-hid="apple-mobile-web-app-title" name="apple-mobile-web-app-title" content="Come hang out with our TV Shows & Comics!">
+        <meta data-n-head="ssr" data-hid="theme-color" name="theme-color" content="#1a1a1a">
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>RW Studio - Come hang out with our TV Shows & Comics!</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<link rel="shortcut icon" type="image/x-icon" href="../assets/img/favicon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+		<!-- CSS here -->
+        <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/animate.min.css">
+        <link rel="stylesheet" href="../assets/css/magnific-popup.css">
+        <link rel="stylesheet" href="../assets/css/fontawesome-all.min.css">
+        <link rel="stylesheet" href="../assets/css/swiper-bundle.css">
+        <link rel="stylesheet" href="../assets/css/flaticon.css">
+        <link rel="stylesheet" href="../assets/css/slick.css">
+        <link rel="stylesheet" href="../assets/css/odometer.css">
+        <link rel="stylesheet" href="../assets/css/default.css">
+        <link rel="stylesheet" href="../assets/css/style.css">
+        <link rel="stylesheet" href="../assets/css/responsive.css">
+        <link href="https://unpkg.com/video.js/dist/video-js.min.css" rel="stylesheet">
+    </head>
+    <body>
+
+        <!-- preloader -->
+        <div id="preloader">
+            <div id="loading-center">
+                <div id="loading-center-absolute">
+                    <img src="../assets/img/logo.png" alt="Loader">
+					<div id="loading-center=text">
+					<p>DID YOU KNOW?</p>
+					<div id="factDisplay" alt="Loader"></div></div>
+                </div>
+            </div>
+        </div>
+        <!-- preloader-end -->
+
+		<!-- Scroll-top -->
+        <button class="scroll-top scroll-to-target" data-target="html">
+            <i class="fa-solid fa-angle-up"></i>
+        </button>
+        <!-- Scroll-top-end-->
+
+        <!-- header-area -->
+        <header>
+            <div id="sticky-header" class="menu-area menu-style-two">
+                <div class="container custom-container">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="mobile-nav-toggler"><i class="fa-solid fa-bars"></i></div>
+                            <div class="menu-wrap">
+                                <nav class="menu-nav">
+                                    <div class="logo">
+                                        <a href="../index.html"><img src="../assets/img/logo/logo.png" alt=""></a>
+                                    </div>
+                                    <div class="header-cat-select">
+                                    </div>
+                                    <div class="navbar-wrap main-menu d-none d-lg-flex">
+                                        <ul class="navigation">
+                                            <li><a href="../index.html">Home</a>
+                                            </li>
+                                            <li class="menu-item-has-children"><a href="../comic.html">COMIC</a>
+                                                <ul class="submenu">
+                                            <li><a href="../comic-details/thelastwords.html">The Last Words</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="../tv-show.html">TV SHOW</a></li>
+                                            <li class="active"><a href="../map.html">MAP</a>
+											<ul class="submenu">
+                                            <li class="active"><a href="../comic-details/who-am-i-now.html">Who Am I Now ?</a></li>
+                                                </ul>
+                                            </li>
+                                            <li><a href="../movie.html">MOVIE</a>
+                                            </li>
+                                            <li class="menu-item-has-children"><a href="#">PAGES</a>
+                                                <ul class="submenu">
+                                                    <li><a href="../termsofuse.html">Terms Of Use</a></li>
+                                                    <li><a href="../privacy.html">Privacy Policy</a></li>
+                                                    <li><a href="../about-us.html">About Us</a></li>
+                                                    <li><a href="../help-center.html">Help Center</a></li>
+                                                    <li><a href="../rwbox">Download</a></li>
+                                                </ul>
+                                            </li>
+                                    </div>
+                                    <div class="header-action d-none d-md-block">
+                                        <ul>
+                                            <li class="d-none d-xl-block">
+                                                <div class="footer-search">
+    <div class="box-search" id="search">
+        <form class="row" @submit.prevent>
+            <div class="col-12 col-7-m col-8-l col-10-xl">
+                <input class="field" id="username" type="text" placeholder="Find favorite project" v-model="username">
+            </div>
+            <div class="col-12 col-5-m col-4-l col-2-xl">
+                <button @click="coder" class="button"><i class="fas fa-search"></i></button>
+            </div>
+        </form>
+    </div>
+                                            </li>
+                                                    <div class="icon"></div>
+<div class="navbar-wrap main-menu d-none d-lg-flex">
+                                        <ul class="navigation">
+                                          <li class="header-btn"><a href="#" class="btn">Languages</a>
+                                                <ul class="submenu">
+                                                    <li><a href="../index.html">English</a></li>
+                                                    <li><a href="../lang/danish.html">Danish</a></li>
+                                                    <li><a href="../lang/german.html">German</a></li>
+                                                    <li><a href="../lang/spanish.html">Spanish</a></li>
+                                                    <li><a href="../lang/italian.html">Italian</a></li>
+                                                    <li><a href="../lang/vietnamese.html">Vietnamese</a></li>
+                                                    <li><a href="../lang/romanian.html">Romanian</a></li>
+                                                </ul>
+                                            </li>
+                                    </div>
+                                        </ul>
+                                    </div>
+                                </nav>
+                            </div>
+                            <!-- Mobile Menu  -->
+                            <div class="mobile-menu">
+                                <nav class="menu-box">
+                                    <div class="close-btn"><i class="fa-solid fa-xmark"></i></div>
+                                    <div class="nav-logo"><a href="../index.html"><img src="../assets/img/logo/logo.png" alt="" title=""></a>
+                                    </div>
+                                    <div class="menu-outer">
+                                        <!--Here Menu Will Come Automatically Via Javascript / Same Menu as in Header-->
+                                    </div>
+<ul class="navigation">
+                                            <li class="menu-item-has-children"><a href="#">Languages</a>
+                                                <ul class="submenu">
+                                                    <li><a href="../index.html">English</a></li>
+                                                    <li><a href="../lang/danish.html">Danish</a></li>
+                                                    <li><a href="../lang/german.html">German</a></li>
+                                                    <li><a href="../lang/spanish.html">Spanish</a></li>
+                                                    <li><a href="../lang/italian.html">Italian</a></li>
+                                                    <li><a href="../lang/vietnamese.html">Vietnamese</a></li>
+                                                    <li><a                 href="../lang/romanian.html">Romanian</a></li>
+                                           </ul>
+                                        </li>
+                                    </div>
+                                </nav>
+                            </div>
+                            <div class="menu-backdrop"></div>
+                            <!-- End Mobile Menu -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- header-area-end -->
+
+
+        <!-- main-area -->
+        <main>
+
+            <!-- movie-details-area -->
+            <section class="comingsoon-details-area comingsoon-details-bg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-xl-3 col-lg-4 col-md-6 order-1">
+                            <div class="comingsoon-details-thumb">
+                                <img src="../assets/img/poster/whoaminow.png" alt="img">
+                            </div>
+                        </div>
+                        <div class="col-xl-6 col-lg-8 order-3 order-lg-2">
+                            <div class="movie-details-content">
+                                <h4 class="sub-title">Our Story</h4>
+                                <h5 class="title"><span>Who Am</span> I <span>Now</span> ?</h5>
+                                <div class="movie-details-meat">
+                                    <ul>
+                                        <li class="score">PG-18</li>
+                                        <li>2024</li>
+                                        <li class="quality"><p>Optifine <span>1.16.5</span></p></li>
+                                        <li class="tv-series">Maps</li>
+                                    </ul>
+                                </div>
+                                <p></p>
+                                <div class="movie-info">
+                                    <ul>
+                                        <li>Directors : <a href="#">Ethan Wilson</a> <a href="#">Siver Revas</a> <a href="#">Derek Revas</a></li>
+                                        <li>Genres : <a href="#">Horror</a></li>
+                                        <li>Subtitles : <a href="#">English [CC]</a></li>
+                                    </ul>
+                                </div>
+                                <a href="../assets/img/maps/Who Am I Now 1.16.5.zip" class="play-btn "><i class="fa-solid fa-download"></i>Download Now</a>
+</div>
+</div>
+<div class="col-xl-3 col-lg-4 col-md-6 order-2 order-lg-3">
+                            <div class="movie-trailer">
+                                <div class="movie-trailer-img">
+                                    <a href="../assets/img/trailer/coming-soon.mp4" class="play-btn popup-video"><i class="fa-solid fa-play"></i></a>
+                                    <img src="../assets/img/poster/comingsoon_trailer.jpg" alt="img">
+                                </div>
+                                <div class="trailer-content">
+                                    <h6 class="title">Trailer</h6>
+                                    <span>0 : 12</span>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- movie-details-area-end -->
+
+            <!-- breadcrumb-area -->
+            <div class="breadcrumb-area movie-details-breadcrumb">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="breadcrumb-content">
+                                <nav aria-label="breadcrumb">
+                                    <ol class="breadcrumb">
+                                        <li class="breadcrumb-item"><a href="../index.html">Home</a></li>
+                                        <li class="breadcrumb-item"><a href="../map.html">Map</a></li>
+                                        <li class="breadcrumb-item active" aria-current="page">Who Am I Now ?</li>
+                                    </ol>
+                                </nav>
+                                <div class="download-btn">
+                                    <a href="#" target="_blank" download=""><i class="fa-solid fa-download"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- breadcrumb-area-end -->
+
+<!-- episode-area -->
+            <section class="episode-area episode-bg pt-90 pb-90">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="section-title mb-40">
+                                <h4 class="sub-title">RW PROJECT</h4>
+                                <h2 class="title">Cast</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                            <div class="col-xl-4 col-md-6 col-sm-9">
+                            <div class="pricing-box mb-30">
+                                <div class="pricing-price">
+                                    <h2 class="price"><img src="../assets/img/cast/YourEgg.png"/></h2>
+                                </div>
+                                    <h1 class="title">YourEgg</h1>
+                                <div class="pricing-list">
+                                    <ul>
+                                        <li></li>
+                                        <h3 style="color:gray;">The Judge</h3>
+                                    </ul>
+                                </div>
+                                <div class="pricing-bottom text-center">
+                                    <a href="https://www.castingcall.club/jwehbe21" class="btn">CASTING CALL CLUB</a>
+                                </div>
+                            </div>
+                        </div>
+						<div class="col-xl-4 col-md-6 col-sm-9">
+                            <div class="pricing-box mb-30">
+                                <div class="pricing-price">
+                                    <h2 class="price"><img src="../assets/img/cast/ToastieBoiVA.jpeg"/></h2>
+                                </div>
+                                    <h1 class="title">ToastieBoiVA</h1>
+                                <div class="pricing-list">
+                                    <ul>
+                                        <li></li>
+                                        <h3 style="color:gray;">William Donionweek</h3>
+                                    </ul>
+                                </div>
+                                <div class="pricing-bottom text-center">
+                                    <a href="https://www.castingcall.club/planetoaster35" class="btn">CASTING CALL CLUB</a>
+                                </div>
+                            </div>
+                        </div>
+						<div class="col-xl-4 col-md-6 col-sm-9">
+                            <div class="pricing-box mb-30">
+                                <div class="pricing-price">
+                                    <h2 class="price"><img src="../assets/img/cast/Frostyblustar.png"/></h2>
+                                </div>
+                                    <h1 class="title">Frostyblustar</h1>
+                                <div class="pricing-list">
+                                    <ul>
+                                        <li></li>
+                                        <h3 style="color:gray;">Dorison J</h3>
+                                    </ul>
+                                </div>
+                                <div class="pricing-bottom text-center">
+                                    <a href="https://www.castingcall.club/frostyblustar" class="btn">CASTING CALL CLUB</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- episode-area-end -->
+
+            <!-- episode-area -->
+            <section class="episode-area episode-bg pt-90 pb-90">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="section-title mb-40">
+                                <h4 class="sub-title">RW PROJECT</h4>
+                                <h2 class="title">Rate & Review</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xl-9 col-lg-8">
+                            <div class="episode-watch-wrap">
+<div id="disqus_thread"></div>
+<script>
+    (function() { // DON'T EDIT BELOW THIS LINE
+    var d = document, s = d.createElement('script');
+    s.src = 'https://https-rwstudio-nim-town.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the</noscript>
+                            </div>
+                            <div class="movie-description">
+                                <div class="description-title">
+                                    <h2 class="title"><span>Who <br> Am </span> I <span> Now </span> ? </h2>
+                                </div>
+                                <div class="description-content">
+								<span>How To Download & Install The Map</span>
+									<br>
+									<p>1. Click on the <strong style="color:tomato;">DOWNLOAD NOW</strong> button</p>
+									<p>2. Extract the map file you have just downloaded.</p>
+									<p>3. Press <strong style="color:gray;">Window+R</strong> to open the Run command window, type <strong style="color:gray;">%appdata%</strong> then press <strong style="color:gray;">Enter</strong> to open The <strong style="color:gray;">Roaming folder</strong>.</p>
+									<p>4. Inside the <strong style="color:gray;">.minecraft</strong> folder, you should see a folder named <strong style="color:gray;">saves</strong>, place the extracted map file into this folder.</p>
+									<p>5. Open the game and click on <strong style="color:gray;">Singleplayer</strong>. Choose the world you have just installed and click <strong style="color:gray;">Play selected world</strong> to start your adventure.</p>
+									<br>
+								    <span>RULES</span>
+									<p>Resource Pack is <strong style="color:tomato;">REQUIRED</strong></p>
+									<p>Gamemode must stay <strong style="color:tomato;">ADVENTURE</strong></p>
+									<p><strong style="color:tomato;">DO NOT </strong>breaking or placing blocks</p>
+									<p>You must be <strong style="color:tomato;">18 YEARS OLD or OLDER </strong>to experience the map</p>
+									<p>It is <strong style="color:tomato;">FORBIDDEN </strong>to cheat</p>
+									<p>Best played with headphones</p>
+									<p>Using <strong style="color:tomato;">OPTIFINE </strong>can help improve FPS (frames per second) performance</p>
+									<p>Play in <strong style="color:tomato;">SINGLEPLAYER</strong></p>
+									<p><strong style="color:tomato;">DO NOT </strong>use any other perspective than the first person perspective</p>
+									<p>If you want to use shaders, SEUS Shaders by Sonic Ether is a suitable choice</p>
+									<p>These rules will make a better gameplay experience!</p>
+									<section class="breadcrumb-area breadcrumb-bg" data-background="assets/img/bg/breadcrumb_bg.jpg">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-15">
+									<div class="movie-upload-wrap">
+                                <div class="movie-upload-top">
+                                    <h4 class="title">
+                                        <span class="dot"></span>
+                                        <span class="text">VIDEO SETTINGS</span>
+                                    </h4>
+                                </div>
+									<br>
+									<nav aria-label="breadcrumb">
+									<p> &nbsp;&nbsp;&nbsp;&nbsp;Graphics: <strong style="color:MediumSeaGreen;">Fancy</strong>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Rain and snow: <strong style="color:white;">Default</strong></p>
+									<p> &nbsp;&nbsp;&nbsp;&nbsp;Render Distance: <strong style="color:white;"> 12 chunks</strong> <strong style="color:tomato;"> ( REQUIRED )</strong>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Custom entity model: <strong style="color:MediumSeaGreen;">ON</strong></p>
+									<p> &nbsp;&nbsp;&nbsp;&nbsp;Smooth Lighting: <strong style="color:white;">Maximum</strong>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Custom item: <strong style="color:MediumSeaGreen;">ON</strong></p>
+									<p> &nbsp;&nbsp;&nbsp;&nbsp;Trees: <strong style="color:MediumSeaGreen;">Fancy</strong>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Animation: <strong style="color:MediumSeaGreen;">ALL ON</strong></p>
+									<p> &nbsp;&nbsp;&nbsp;&nbsp;View Bobbing: <strong style="color:MediumSeaGreen;">ON</strong>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	&nbsp;FOV Effects: <strong style="color:white;">100%</strong></p>
+									<p> &nbsp;&nbsp;&nbsp;&nbsp;Brightness: <strong style="color:white;">50%</strong>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Custom fonts: <strong style="color:MediumSeaGreen;">ON</strong></p>
+									<p> &nbsp;&nbsp;&nbsp;&nbsp;Dynamic light: <strong style="color:MediumSeaGreen;">Fancy</strong> <strong style="color:tomato;"> ( REQUIRED )</strong>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Clouds: <strong style="color:tomato;">OFF</strong></p>
+									<p> &nbsp;&nbsp;&nbsp;&nbsp;Smooth Lighting Level: <strong style="color:white;">100%</strong>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Alternate blocks: <strong style="color:tomato;">OFF</strong></p>
+								    <p> &nbsp;&nbsp;&nbsp;&nbsp;Custom Color: <strong style="color:MediumSeaGreen;">ON</strong> <strong style="color:tomato;"> ( REQUIRED )</strong>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Fog: <strong style="color:white;">0.4</strong></p>
+									<p> &nbsp;&nbsp;&nbsp;&nbsp;Sun and moon: <strong style="color:MediumSeaGreen;">ON</strong>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Swamp color: <strong style="color:MediumSeaGreen;">ON</strong></p>
+									<p> &nbsp;&nbsp;&nbsp;&nbsp;Stars: <strong style="color:MediumSeaGreen;">ON</strong>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	Entity distance: <strong style="color:white;">100%</strong></p>
+									<p> &nbsp;&nbsp;&nbsp;&nbsp;Custom sky: <strong style="color:MediumSeaGreen;">ON</strong></p>
+									<br>
+									</nav>
+									<br>
+									<div class="movie-upload-top">
+			                        <h4 class="title">
+                                        <span class="dot"></span>
+                                        <span class="text">MUSIC SETTINGS</span>
+                                    </h4>
+									</div>
+									<nav aria-label="breadcrumb">
+									<br>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;MASTER VOLUME: <strong style="color:white;">100% </strong> <strong style="color:gray;">( or it's up to you if you feel like it's enough to hear )</strong></p>
+									<br>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;Music: <strong style="color:tomato;">OFF</strong>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Friendly Creatures: <strong style="color:tomato;">OFF</strong></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;eather: <strong style="color:tomato;">OFF</strong>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Players: <strong style="color:MediumSeaGreen;">100%</strong></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;Jukebox/Noteblocks: <strong style="color:MediumSeaGreen;">100%</strong>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Ambient/Environment: <strong style="color:MediumSeaGreen;">100%</strong></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;Blocks: <strong style="color:MediumSeaGreen;">100%</strong>&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	&nbsp;Voice/Speech: <strong style="color:MediumSeaGreen;">100%</strong></p>
+									<p>&nbsp;&nbsp;&nbsp;&nbsp;Hostile Creatures: <strong style="color:tomato;">OFF</strong></p>
+									</nav>
+									                        </div>
+                    </div>
+                </div>
+            </section>
+                                    <span>information</span>
+                                    <p>WRITTEN BY</p>
+									<strong style="color:white;">Siver Revas ,</strong>
+									<strong style="color:white;"> Ethan Wilson</strong>
+									<p>PRODUCED BY</p>
+									<strong style="color:white;">The RW Studio</strong>
+									<p>SOUND DESIGN BY</p>
+									<strong style="color:white;">Ethan Wilson ,</strong>
+									<strong style="color:white;">Siver Revas</strong>
+									<p>GRAPHIC DESIGNERS</p>
+									<strong style="color:white;">Ethan Wilson ,</strong>
+									<strong style="color:white;">Derek Revas ,</strong>
+									<strong style="color:white;">Siver Revas ,</strong>
+									<strong style="color:white;">BrokohFG</strong>
+									<p>BUILT BY</p>
+									<strong style="color:white;">Ethan Wilson ,</strong>
+									<strong style="color:white;">Derek Revas ,</strong>
+									<strong style="color:white;">Siver Revas ,</strong>
+									<strong style="color:white;">Korit ,</strong>
+									<strong style="color:white;">BrokohFG</strong>
+									<p>COMMANDED BY</p>
+									<strong style="color:white;">Ethan Wilson</strong>
+									<p>DATAPACKS MADE BY</p>
+									<p><strong style="color:white;">flashlight : Antoha256M</strong></p>
+									<p><strong style="color:white;">AnimatedDoubleDoorsDatapack : Scommander_</strong></p>
+									<p><strong style="color:white;">numlock : Ethan Wilson</strong></p>
+									<p><strong style="color:white;">main menu : Ethan Wilson , Siver Revas , BisUmTo , Derek Revas</strong></p>
+									<p>TRAILER MADE BY</p>
+									<strong style="color:white;">Siver Revas , </strong>
+									<strong style="color:white;">Derek Revas</strong>
+									<p></p>
+									<br>
+									<p style="color:white;">Copyright © All Rights Reserved By RW Studio</p>
+									<br>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-xl-3 col-lg-4">
+                            <div class="more-like-wrap">
+                                <div class="more-like-top">
+                                    <h4 class="title">Other Projects</h4>
+                                </div>
+                                <div class="more-like-bottom">
+                                    <ul>
+                                        <li>
+                                            <div class="thumb">
+                                                <a href="../comic-details/thelastwords.html"><img src="../assets/img/poster/thelastwords.jpg" alt="img"></a>
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="title"><a href="../comic-details/thelastwords.html">The Last Words</a></h4>
+                                                <p><span>Comics</span> 2020</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumb">
+                                                <a href="#"><img src="../assets/img/poster/comingsoon.jpg" alt="img"></a>
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="title"><a href="#">Coming Soon</a></h4>
+                                                <p><span>Locked</span> Locked</p>
+                                            </div>
+                                        </li>
+                                        <li>
+                                            <div class="thumb">
+                                                <a href="#"><img src="../assets/img/poster/comingsoon.jpg" alt="img"></a>
+                                            </div>
+                                            <div class="content">
+                                                <h4 class="title"><a href="#">Coming Soon</a></h4>
+                                                <p><span>Locked</span> Locked</p>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- episode-area-end -->
+
+        </main>
+        <!-- main-area-end -->
+
+        <!-- footer-area -->
+        <footer>
+            <div class="footer-area">
+                <div class="footer-top">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-12">
+                                <div class="footer-logo text-center mb-30">
+                                    <a href="../index.html"><img src="../assets/img/logo/logo.png" alt="img"></a>
+                                </div>
+                                <div class="footer-menu-wrap">
+                                    <div class="footer-menu">
+                                        <ul class="navigation">
+                                            <li><a href="../index.html">HOME</a></li>
+                                            <li><a href="../comic.html">COMIC</a></li>
+                                            <li><a href="../tv-show.html">TV SHOW</a></li>
+                                            <li class="active"><a href="../map.html">MAP</a></li>
+                                            <li><a href="../movie.html">MOVIE</a></li>
+                                        </ul>
+                                    </div>
+                                    <div class="footer-search">
+    <div class="box-search" id="search2">
+        <form class="row" @submit.prevent>
+            <div class="col-12 col-7-m col-8-l col-10-xl">
+                <input class="field" id="username" type="text" placeholder="Find favorite project" v-model="username">
+            </div>
+            <div class="col-12 col-5-m col-4-l col-2-xl">
+                <button @click="coder" class="button"><i class="fas fa-search"></i></button>
+            </div>
+        </form>
+    </div>
+                                </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="footer-widget mb-50">
+                                    <h4 class="fw-title">RW Comic Projects</h4>
+                                    <ul class="fw-ling">
+                                        <li><a href="../comic-details/thelastwords.html">The Last Words</a></li>
+                                        <li><a href="#">Coming Soon</a></li>
+                                        <li><a href="#">Coming Soon</a></li>
+                                        <li><a href="#">Coming Soon</a></li>
+                                        <li><a href="#">Coming Soon</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="footer-widget mb-50">
+                                    <h4 class="fw-title">RW TV Show Projects</h4>
+                                    <ul class="fw-ling">
+                                        <li><a href="#">Coming Soon</a></li>
+                                        <li><a href="#">Coming Soon</a></li>
+                                        <li><a href="#">Coming Soon</a></li>
+                                        <li><a href="#">Coming Soon</a></li>
+                                        <li><a href="#">Coming Soon</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="footer-widget mb-50">
+                                    <h4 class="fw-title">RW Map Projects</h4>
+                                    <ul class="fw-ling">
+                                        <li><a href="../map-details/who-am-i-now.html">Who Am I Now ?</a></li>
+                                        <li><a href="#">Coming Soon</a></li>
+                                        <li><a href="#">Coming Soon</a></li>
+                                        <li><a href="#">Coming Soon</a></li>
+                                        <li><a href="#">Coming Soon</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-lg-3 col-md-4 col-sm-6">
+                                <div class="footer-widget mb-50">
+                                    <h4 class="fw-title">RW Movie Projects</h4>
+                                    <ul class="fw-ling">
+                                        <li><a href="#">Coming Soon</a></li>
+                                        <li><a href="#">Coming Soon</a></li>
+                                        <li><a href="#">Coming Soon</a></li>
+                                        <li><a href="#">Coming Soon</a></li>
+                                        <li><a href="#">Coming Soon</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <div class="container">
+                        <div class="row align-items-center">
+                            <div class="col-md-6">
+                                <div class="copyright-text">
+                                    <p id="copyright">Copyright &copy;&nbsp;<span id="year"> </span> All Rights Reserved By <a href=https://rwstudio.nim.town>RW Studio</a></p>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="copyright-img text-center text-md-end">
+                                    <div class="footer-menu">
+                                        <ul class="navigation">
+                                            <li><a href="../termsofuse.html">terms of use</a></li>
+                                            <li><a href="../privacy.html">privacy</a></li>
+                                            <li><a href="../about-us.html">About Us</a></li>
+                                            <li><a href="../help-center.html">Help Center</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- footer-area-end -->
+
+
+
+
+
+		<!-- JS here -->
+        <script src="../assets/js/vendor/jquery-3.6.0.min.js"></script>
+        <script src="../assets/js/bootstrap.min.js"></script>
+        <script src="../assets/js/isotope.pkgd.min.js"></script>
+        <script src="../assets/js/imagesloaded.pkgd.min.js"></script>
+        <script src="../assets/js/jquery.magnific-popup.min.js"></script>
+        <script src="../assets/js/jquery.odometer.min.js"></script>
+        <script src="../assets/js/jquery.appear.js"></script>
+        <script src="../assets/js/swiper-bundle.js"></script>
+        <script src="../assets/js/slick.min.js"></script>
+        <script src="../assets/js/validator.js"></script>
+        <script src="../assets/js/ajax-form.js"></script>
+        <script src="../assets/js/wow.min.js"></script>
+        <script src="../assets/js/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue@2"></script>
+        <script src="../assets/js/searchproject.js"></script>
+        <script src="../assets/js/searchproject2.js"></script>
+        <script src="https://unpkg.com/video.js/dist/video.min.js"></script>
+		<script src="../assets/js/fact.js"></script>
+    </body>
+
+</html>
