@@ -3323,6 +3323,200 @@ label {
 	font-size: 24px;
 }
 
+/* 15. Who Am I Now Details */
+.wain-details-bg {
+	background-image: url(../img/bg/wainbg.webp);
+	background-size: cover;
+	background-position: center;
+	padding: 100px 0;
+	position: relative;
+	z-index: 1;
+}
+.wain-details-bg::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background: #1c1e1e;
+	opacity: .55;
+	z-index: -1;
+}
+.wain-details-content .sub-title {
+	font-size: 28px;
+	font-weight: 400;
+	text-transform: uppercase;
+	margin-bottom: 8px;
+}
+.wain-details-content .title {
+	font-size: 70px;
+	font-weight: 600;
+	color: #fefefe;
+	margin-bottom: 24px;
+	line-height: 1;
+	letter-spacing: -1px;
+}
+.wain-details-content .title span {
+	color: #8f0009;
+	font-weight: 300;
+}
+.wain-details-meat ul {
+	display: flex;
+	align-items: center;
+	margin-bottom: 32px;
+}
+.wain-details-meat ul li {
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+	font-weight: 600;
+	color: #fefefe;
+	margin-right: 10px;
+}
+.wain-details-meat ul li:last-child {
+	margin-right: 0;
+}
+.wain-details-meat ul li.score {
+	color: #121313;
+	background: #8f0009;
+	border-radius: 0;
+	padding: 5px 11px;
+	display: block;
+	line-height: 1;
+	text-transform: uppercase;
+}
+.wain-details-meat ul li.tv-series {
+	color: #c8c8c8;
+}
+.wain-details-content p {
+	font-size: 14px;
+	margin-bottom: 12px;
+	color: #c8c8c8;
+	font-weight: 500;
+}
+.wain-details-content .movie-info {
+	margin-bottom: 38px;
+}
+.wain-details-content .movie-info ul li {
+	font-weight: 500;
+	margin-bottom: 10px;
+}
+.wain-details-content .movie-info ul li:last-child {
+	margin-bottom: 0;
+}
+.wain-details-content .movie-info ul li a {
+	color: #c8c8c8;
+	margin-left: 10px;
+}
+.wain-details-content .movie-info ul li a:hover {
+	color: #8f0009;
+}
+.wain-details-content .play-btn {
+	font-weight: 700;
+	color: #fefefe;
+	text-transform: uppercase;
+	display: inline-flex;
+	align-items: center;
+}
+.wain-details-content .play-btn i {
+	width: 55px;
+	height: 53px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #8f0009;
+	font-size: 18px;
+	color: #1a1c1e;
+	border-radius: 50%;
+	margin-right: 10px;
+}
+.wain-details-content .play-btn:hover {
+	color: #8f0009;
+}
+.wain-trailer {
+	position: relative;
+	margin-right: -99px;
+	margin-left: 123px;
+}
+.wain-trailer-img {
+	position: relative;
+	box-shadow: 0px 7px 10px 0px rgba(0, 0, 0, 0.26);
+}
+.wain-trailer-img img {
+	border-radius: 4px;
+}
+.wain-trailer-img::before {
+	content: "";
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: linear-gradient(to bottom, transparent, #000);
+	opacity: .9;
+}
+.wain-trailer-img .play-btn {
+	position: absolute;
+	left: 17px;
+	top: 20px;
+	width: 50px;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background: #e6e5e2;
+	border-radius: 50%;
+	font-size: 18px;
+	color: #1a1c1e;
+}
+.wain-trailer .trailer-content {
+	position: absolute;
+	left: 23px;
+	right: 23px;
+	bottom: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+.wain-trailer .trailer-content .title {
+	font-size: 14px;
+	font-weight: 500;
+	color: #8f0009;
+	margin-bottom: 0;
+}
+.wain-trailer .trailer-content span {
+	font-weight: 500;
+}
+.wain-details-breadcrumb {
+	background: #18181a;
+	padding: 0 0;
+	min-height: auto;
+}
+.wain-details-breadcrumb .breadcrumb-content .breadcrumb {
+	justify-content: flex-start;
+}
+.wain-details-breadcrumb .breadcrumb .breadcrumb-item {
+	text-transform: capitalize;
+}
+.wain-details-breadcrumb .breadcrumb-content {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+.wain-details-breadcrumb .breadcrumb-content .download-btn a {
+	background: #8f0009;
+	width: 110px;
+	height: 75px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 4px 4px 0px 0px;
+	color: #121001;
+	font-size: 24px;
+}
+
 /* 15. Movie Details */
 .movie-details-bg {
 	background-image: url(../img/bg/movie_details_bg.jpg);
